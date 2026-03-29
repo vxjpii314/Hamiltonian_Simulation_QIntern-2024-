@@ -48,7 +48,15 @@ This is just a **Hamiltonian simulation** followed by **tracing out the ancilla*
 
 The dilated Hamiltonian has the block structure:
 
-$$\tilde{H} = \begin{pmatrix} H_0 & H_1^\dagger & H_2^\dagger & \cdots \\ H_1 & 0 & 0 & \cdots \\ H_2 & 0 & 0 & \cdots \\ \vdots & & & \ddots \end{pmatrix}$$
+$$
+\tilde{H} = \begin{bmatrix}
+H_0 & \dots & H_{1,j}^\dagger & \dots & H_{2,j,k}^\dagger \\
+\dots & 0 & 0 & 0 & 0 \\
+H_{1,j} & 0 & 0 & 0 & 0 \\
+\dots & 0 & 0 & 0 & 0 \\
+H_{2,j,k} & 0 & 0 & 0 & 0
+\end{bmatrix}
+$$
 
 where each $H_j$ is built from polynomials of the system Hamiltonian $H$ and the jump operators $V_j$.
 
