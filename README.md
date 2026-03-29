@@ -22,7 +22,7 @@ The core idea of the method is a three-step derivation:
 Lindblad equation  →  SDE unraveling  →  Kraus form  →  Dilated Hamiltonian
 ```
 
-**Step 1 — Unravel into a Stochastic Schrödinger Equation (SSE)**
+**Step 1: Unravel into a Stochastic Schrödinger Equation (SSE)**
 
 The Lindblad equation can be "unraveled" into a stochastic differential equation for a pure state $|\psi_t\rangle$:
 
@@ -30,7 +30,7 @@ $$d|\psi_t\rangle = \left(-iH - \frac{1}{2}\sum_j V_j^\dagger V_j\right)|\psi_t\
 
 where $dW_t^j$ are independent Wiener processes. If you average the resulting density matrices over many trajectories, you recover the Lindblad solution exactly.
 
-**Step 2 — Discretize and write in Kraus form**
+**Step 2: Discretize and write in Kraus form**
 
 By applying classical numerical SDE schemes (like the Euler–Maruyama method) and taking expectations, we get a Kraus representation of one time step:
 
@@ -38,7 +38,7 @@ $$\rho_{n+1} = \sum_j F_j \rho_n F_j^\dagger$$
 
 Higher-order schemes (using Itô–Taylor expansion) give higher-order Kraus forms with more operators.
 
-**Step 3 — Lift to a dilated Hamiltonian**
+**Step 3: Lift to a dilated Hamiltonian**
 
 Instead of implementing the Kraus form directly, the method constructs a **dilated (enlarged) Hamiltonian** $\tilde{H}$ in a bigger Hilbert space (system + ancilla qubits), such that:
 
@@ -81,7 +81,7 @@ This gave me a concrete grounding in the physics before implementing the general
 
 The notebook (`lindblad_hamiltonian_simulation.ipynb`) implements the full pipeline for two physical models:
 
-### Model 1 — Amplitude Damping (AD) Channel
+### Model 1: Amplitude Damping (AD) Channel
 
 A single-qubit model for spontaneous emission, with jump operator $V = \sqrt{\gamma}\,\sigma_-$.
 
@@ -92,7 +92,7 @@ A single-qubit model for spontaneous emission, with jump operator $V = \sqrt{\ga
 - Simulates the SSE (stochastic Schrödinger equation) trajectories and averages them
 - Verifies the Stinespring dilation error scales as $O(\Delta t^2)$
 
-### Model 2 — Transverse-Field Ising Model (TFIM) with Damping
+### Model 2: Transverse-Field Ising Model (TFIM) with Damping
 
 A multi-qubit spin chain:
 
