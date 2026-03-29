@@ -140,4 +140,4 @@ The numerical results match the theoretical predictions from the paper.
 
 ## About
 
-This project was done as part of **QIntern 2024**, an internship program organized by **QWorld**. I am an undergraduate student from Malaysia, and this was my first time working seriously with open quantum systems and quantum simulation algorithms. It was quite challenging especially in understanding the stochastic calculus parts, but I learned a lot from going through the paper carefully and trying to implement everything from scratch.
+This project was done as part of **QIntern 2024**, an 3months internship program organized by **QWorld**. I was doing this in 2024 where I was still an undergraduate student that moment, and this was my first time working seriously with open quantum systems and quantum simulation algorithms. It was quite challenging especially in understanding the stochastic calculus parts, but I learned a lot from going through the paper carefully and trying to implement everything from scratch.
