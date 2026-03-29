@@ -1,6 +1,6 @@
 # Simulating Open Quantum Systems Using Hamiltonian Simulations
 
-This is my project for the **QIntern 2024** program under **QWorld**. The goal was to study and implement a method to simulate Lindblad (open quantum system) dynamics using Hamiltonian simulations — based on the paper by Ding, Li, and Lin (arXiv:2311.15533).
+This is my project for the **QIntern 2024** program under **QWorld**. The goal was to study and implement a method to simulate Lindblad (open quantum system) dynamics using Hamiltonian simulations, based on the paper by Ding, Li, and Lin (arXiv:2311.15533).
 
 ---
 
@@ -10,7 +10,7 @@ When we talk about quantum systems in the real world, they are almost never perf
 
 $$\frac{d\rho}{dt} = -i[H, \rho] + \sum_j \left( V_j \rho V_j^\dagger - \frac{1}{2}\{V_j^\dagger V_j, \rho\} \right)$$
 
-The problem is, simulating this on a quantum computer is not straightforward. Many existing algorithms require complicated control logic, amplitude amplification, or ancilla-heavy procedures. The paper I studied proposes something cleaner — reduce the whole thing to a **Hamiltonian simulation** problem, which is much better understood.
+The problem is, simulating this on a quantum computer is not straightforward. Many existing algorithms require complicated control logic, amplitude amplification, or ancilla-heavy procedures. The paper I studied proposes something cleaner in order to reduce the whole thing to a **Hamiltonian simulation** problem, which is much better understood.
 
 ---
 
